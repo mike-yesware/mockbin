@@ -7,7 +7,7 @@ var cmd = require('commander')
 var pkg = require('../package')
 
 var options = {
-  port: process.env.MOCKBIN_PORT || process.env.npm_package_config_port,
+  port: process.env.PORT || process.env.npm_package_config_port,
   quiet: process.env.MOCKBIN_QUIET || process.env.npm_package_config_quiet,
   redis: process.env.MOCKBIN_REDIS || process.env.npm_package_config_redis
 }
